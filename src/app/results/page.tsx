@@ -40,6 +40,7 @@ export default function ResultsPage() {
             <li key={idx} className="border p-4 rounded-lg shadow">
               <p className="font-medium">{item.source.toUpperCase()}</p>
               <p className="font-medium">{item.title}</p>
+              <img src={item.image} alt={item.title} className="w-32 h-32 object-cover my-2" />
               <p className="text-green-600">{item.price}</p>
               <a href={item.link} className="text-blue-500 underline border border-dashed p-1">
                 View product
